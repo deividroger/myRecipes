@@ -9,7 +9,6 @@ class RecipeTest < ActiveSupport::TestCase
         description: "heat oil, add onions, add tomates, add chicken, cook for 20 minutes")
     end
     
-    
     test "recipe should be valid" do
          assert @recipe.valid?
     end
@@ -19,12 +18,10 @@ class RecipeTest < ActiveSupport::TestCase
     assert_not  @recipe.valid?
     end
     
-    
     test "name should be present" do
         @recipe.name = " "
         assert_not @recipe.valid?
     end
-    
     
     test "name length should not be too long" do
         @recipe.name =  "a" * 101
@@ -66,5 +63,4 @@ class RecipeTest < ActiveSupport::TestCase
        assert_not @recipe.valid?
    end
     
-  
 end
