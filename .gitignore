@@ -17,3 +17,6 @@
 /tmp
 # Ignore all cloud9 and hidden files files
 .c9/
+
+#Ignore uploads folder
+/public/uploads

@@ -16,6 +16,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'tzinfo-data'
 
+gem 'carrierwave','0.10.0'
+
+gem 'mini_magick', '3.8.0'
+
 group :development, :test do
   
   gem 'web-console', '~> 2.0'
